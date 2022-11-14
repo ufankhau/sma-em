@@ -15,7 +15,7 @@ StandardOutput=null
 #StandardOutput=syslog
 #SyslogIdentifier=
 StandardError=journal
-Envrionment=PYTHONUNBUFFERED=1
+Environment=PYTHONUNBUFFERED=1
 Restart=always
 RestartSec=3
 
