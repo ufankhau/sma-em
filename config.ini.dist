@@ -1,5 +1,5 @@
-# Configuration file for sma-empv.py
-# Source: https://github.com/ufankhau/sma-empv
+# Configuration file for sma-em.py
+# Source: https://github.com/ufankhau/sma-em
 #
 # Uncomment and adapt all settings as needed.
 # Some settings can be configured by environment variables.
@@ -7,7 +7,7 @@
 
 
 [Log]
-# Enable or disable logging in file /var/log/sma-empv.log (Default: false)
+# Enable or disable logging in file /var/log/sma-em.log (Default: false)
 #enable = true
 
 
@@ -16,8 +16,8 @@
 # Enable or Disable an endless execution loop (Default: true)
 #enabled = true
 
-# This script reports RPi values at a fixed interval in minutes [2-30], (Default: 5)
-interval_in_minutes = 2
+# This script reports Energy Meter values at a fixed interval in seconds [20-300], (Default: 60)
+#interval_in_seconds = 60
 
 
 [MQTT]
