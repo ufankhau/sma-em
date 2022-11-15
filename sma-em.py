@@ -355,7 +355,6 @@ reported_first_time = False
 def send_status(timestamp, nothing):
     emdata = {}
     emdata = getDatafromSMAEnergyMeter()
-    print(emdata['p_consume_counter'])
     smaEMData = OrderedDict()
     smaEMData['timestamp'] = timestamp.astimezone().replace(microsecond=0).isoformat()
     smaEMData['grid_consume_total'] = emdata['p_consume_counter']

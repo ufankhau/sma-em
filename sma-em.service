@@ -1,6 +1,6 @@
 [Unit]
 Description=SMA Energy Meter MQTT Client/Daemon
-Documentation=https://github.com/ufanhau/sma-em
+Documentation=https://github.com/ufankhau/sma-em
 After=network.target mosquitto.service network-online.target
 Wants=network-online.target
 Requires=network.target
