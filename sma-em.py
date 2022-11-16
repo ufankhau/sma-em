@@ -77,8 +77,8 @@ if opt_debug:
 local_tz = get_localzone()
 smaserials = ''
 
-
-
+#  Systemd Service Notifications - https://github.com/bb4242/sdnotify
+sd_notifier = sdnotify.SystemdNotifier()
 
 def getDatafromSMAEnergyMeter():
     #  --------------------------------------------------------------------
@@ -238,7 +238,7 @@ else:
         sleep(1.0)   # some c^slack to estabish the connection
     startAliveTimer()
 
-#sd_notifier.notify('READY=1')
+sd_notifier.notify('READY=1')
 
 #  performe MQTT discovery announcement
 #  create uniqID using the unique serial number of the SMA Energy Meter
