@@ -83,7 +83,7 @@ sd_notifier = sdnotify.SystemdNotifier()
 def getDatafromSMAEnergyMeter():
     #  --------------------------------------------------------------------
     #  create socket to listen to UDP broadcasting on MCAST_GRP, MCAST_PORT
-    ipbind = '192.168.1.124'
+    ipbind = '0.0.0.0'
     MCAST_GRP = '239.12.255.254'
     MCAST_PORT = 9522
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
