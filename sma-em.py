@@ -77,6 +77,9 @@ if opt_debug:
 local_tz = get_localzone()
 smaserials = ''
 
+
+
+
 def getDatafromSMAEnergyMeter():
     #  --------------------------------------------------------------------
     #  create socket to listen to UDP broadcasting on MCAST_GRP, MCAST_PORT
@@ -94,6 +97,7 @@ def getDatafromSMAEnergyMeter():
         print_line('* SOCKET: could not connect to multicast group or bind to given interface', error=True)
         sys.exit(1)
     smaeminfo = sock.recv(1024)
+    sock.close()
     return decode_SMAEM(smaeminfo, opt_debug)
 
 #  ------------
