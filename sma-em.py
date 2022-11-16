@@ -97,7 +97,7 @@ def getDatafromSMAEnergyMeter():
         print_line('* SOCKET: could not connect to multicast group or bind to given interface', error=True)
         sys.exit(1)
     smaeminfo = sock.recv(1024)
-    sock.shutdown(socket.SHUT_RDWR)
+    sock.shutdown()
     sock.close()
     return decode_SMAEM(smaeminfo, opt_debug)
 
