@@ -99,6 +99,7 @@ def getDatafromSMAEnergyMeter():
     smaeminfo = sock.recv(1024)
     #sock.shutdown()
     sock.close()
+    sleep(0.3)
     return decode_SMAEM(smaeminfo, opt_debug)
 
 #  ------------
